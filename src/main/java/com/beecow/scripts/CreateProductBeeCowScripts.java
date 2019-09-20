@@ -557,6 +557,10 @@ public class CreateProductBeeCowScripts extends CommonTestCase {
 					createProductBeeCowPage.inputRandomProductName(randomEditedName);
 					createProductBeeCowPage.clearSUK();
 					createProductBeeCowPage.inputSUK(data.getCreateProduct().getEditedSKU());
+					createProductBeeCowPage.clickEditQuantity();
+					createProductBeeCowPage.clearQuantity();
+					createProductBeeCowPage.inputValueEdit("20");
+					createProductBeeCowPage.clickConfirmEditQuanlity();
 					createProductBeeCowPage.clearDescription();
 					createProductBeeCowPage.inputDescription(data.getCreateProduct().getEditedDescription());
 					createProductBeeCowPage.clearWeight();
@@ -573,7 +577,6 @@ public class CreateProductBeeCowScripts extends CommonTestCase {
 					Thread.sleep(10000);
 					String actualEditedName_msg = js.executeScript("return $('#name').val()").toString();
 					Thread.sleep(1000);
-					System.out.println(actualEditedName_msg);
 					assertEquals(actualEditedName_msg, randomEditedName);
 					//assertEquals(actual, expected);
 					

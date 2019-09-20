@@ -256,5 +256,24 @@ public class CreateProductBeeCow extends CommonFunctions{
 		return null;
 	
 	}
+	public void clickEditQuantity() {
+		waitForElementVisible(CreateBeeCowPageUI.EDITPEN_ICON);
+		clickToElement(CreateBeeCowPageUI.EDITPEN_ICON);
+	}
+	
+	public void inputValueEdit(String value) {
+		waitForElementVisible(CreateBeeCowPageUI.EDITQUANLITY_LBL);
+		inputElement(CreateBeeCowPageUI.EDITQUANLITY_LBL, value);;
+	}
+	
+	public void clearQuantity() {
+		waitForElementVisible(CreateBeeCowPageUI.EDITQUANLITY_LBL);
+		clearElement(CreateBeeCowPageUI.EDITQUANLITY_LBL);
+	}
+	
+	public void clickConfirmEditQuanlity() {
+		waitForElementVisible(CreateBeeCowPageUI.CONFIEMEDITQUANTITY_LBL);
+		clickToElement(CreateBeeCowPageUI.CONFIEMEDITQUANTITY_LBL);
+	}
 	
 }

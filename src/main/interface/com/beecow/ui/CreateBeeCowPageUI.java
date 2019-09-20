@@ -47,4 +47,6 @@ public class CreateBeeCowPageUI {
 	public static String EDITEDSUBMIT_BTN = "//button[@beetranslate='beecow.item.action.update']";
 	public static String VIEWAFTEREDIT_BTN ="//button[@beetranslate='beecow.item.modal.viewProduct']//span";
 	public static String EDIT02_BTN= "//button[@id='edit-product']//span";
+	public static String EDITQUANLITY_LBL = "//input[@id='editQty']";
+	public static String CONFIEMEDITQUANTITY_LBL = "//button[@beetranslate='beecow.common.confirm']//span";
 }
