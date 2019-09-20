@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NgocTest" parallel="false">
+	<test name="TestWithChrome">
+	<parameter name ="browser" value="chrome" />
+	<parameter name ="version" value="77.0.3865.75" />
+	<parameter name ="url" value="https://www.beecow.com"/>
+	
+		<classes>
+			<class name="com.beecow.scripts.CreateProductBeeCowScripts" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
